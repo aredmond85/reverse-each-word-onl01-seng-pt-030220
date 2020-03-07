@@ -3,8 +3,9 @@
 # Do not reverse the sentence just each of the words
 # PUSH each reversed word into a new Array
 def reverse_each_word (sentence)
+  reversed_sentence = []
   sentence.split(" ").collect do |word|
-    word.reverse
+    reversed_sentence = word.reverse
   end
-    return sentence
+    return reversed_sentence
 end
